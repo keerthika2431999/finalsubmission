@@ -1,15 +1,13 @@
 /* Global properties ======================================================== */
 html, body {
-	max-width:1000px;
-        width:66.667%;
+	width:100%;
 	padding:0;
 	margin:0;
 }
 body {
 	font: 14px/18px "Times New Roman", Times, serif;
 	color:#b4b4b4;
-	max-width:960px;
-        width:66.667%;
+	min-width:960px;
 	background: url(../images/bg.gif) center 0 repeat;
 }
 .ic {
@@ -17,8 +15,7 @@ body {
 	float:right;
 	background:#fff;
 	color:#f00;
-	max-width:50%;
-        width:33.333%;
+	width:50%;
 	line-height:10px;
 	font-size:10px;
 	margin:-220% 0 0 0;
@@ -27,13 +24,11 @@ body {
 }
 .bg-top {
 	background:url(../images/bg-top.jpg) center 0 repeat-x;
-	max-width:100%;
-        width:66.66%;
+	width:100%;
 }
 .bgr {
 	background:url(../images/bgr.jpg) center 0 no-repeat;
-	max-width:100%;
-        width:66.667%;
+	width:100%;
 }
 /***********************************************************************/
 a {
@@ -182,12 +177,10 @@ ul.list-1 li a:hover {
 	clear:both;
 	line-height:0;
 	font-size:0;
-	max-width:100%;
-        width:66.667%;
+	width:100%;
 }
 .wrapper {
-	max-width:100%;
-        width:66.667%;
+	width:100%;
 	overflow:hidden;
 	position:relative
 }
@@ -267,8 +260,7 @@ ul.list-1 li a:hover {
 }
 /*********************************header*************************************/
 header {
-	max-width:950px;
-        width:66.667%;
+	width:950px;
 	margin:0px auto;
 	padding-top:27px;
 	z-index:101;
@@ -278,16 +270,14 @@ h1 {
 	display:inline-block;
 	z-index:100;
 	//background:url(../images/logo-bg.jpg) 0 0 no-repeat;
-	max-width:550px;
-        width:33.333%;
+	width:550px;
 	height:0px;
 	margin-left:104px;
 	padding-left:194px;
         font-size: 15px;
 }
 nav {
-	max-width:948px;
-        width:66.667%;
+	width:948px;
 	border:#d3d3d3 1px solid;
 	margin-top:8px;
 }
@@ -303,12 +293,10 @@ ul.menu li:first-child {
 	border-left:none !important;
 }
 ul.menu li:first-child a {
-	max-width:156px !important;
-        width:33.333%;
+	width:156px !important;
 }
 ul.menu li a {
-	max-width:155px;
-        width:33.333%;
+	width:155px;
 	color:#e05009;
 	font-size:18px;
 	line-height:24px;
@@ -332,8 +320,7 @@ ul.menu li:hover a, ul.menu li.current a {
 	left:0;
 	top:16px;
 	z-index:111;
-	max-width:948px;
-        width:66.667%;
+	width:948px;
 }
 .phone-number strong {
 	display:block;
@@ -342,8 +329,7 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 /*********************************content*************************************/
 #content {
-	max-width:950px;
-        width:66.667%;
+	width:950px;
 	margin:0 auto;
 	position:relative;
 }
@@ -379,13 +365,11 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 .block-1>div {
 	float:left;
-	max-width:169px;
-        width:33.333%;
+	width:169px;
 	padding:25px 30px 23px 40px;
 }
 .block-1>div.block-1-last {
-	max-width:158px;
-        width:33.333%;
+	width:158px;
 	padding:25px 30px 22px 40px;
 }
 .block-1-title {
@@ -399,7 +383,7 @@ ul.menu li:hover a, ul.menu li.current a {
 	font-style:italic;
 	font-weight:bold;
 	color:#b4b4b4;
-	max-width:23px;
+	width:23px;
 	float:left;
 	margin-top:40px;
 }
@@ -493,13 +477,11 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 .col-1 {
 	float:left;
-	max-width:590px;
-        width:33.333%;
+	width:590px;
 }
 .col-2 {
 	float:left;
-	max-width:230px;
-        width:33.333%;
+	width:230px;
 }
 .box-1 {
 	overflow:hidden;
@@ -532,8 +514,7 @@ ul.menu li:hover a, ul.menu li.current a {
 	margin:0 40px 0 40px;
 }
 .box-3>div {
-	max-width:190px;
-        width:33.333%;
+	width:190px;
 	float:left;
 	text-align:center;
 	margin-right:10px;
@@ -556,8 +537,7 @@ ul.menu li:hover a, ul.menu li.current a {
 	margin-right:40px;
 }
 .box-4>div {
-	max-width:190px;
-        width:33.333%;
+	width:190px;
 	float:left;
 	text-align:center;
 	margin-right:10px;
@@ -570,24 +550,21 @@ ul.menu li:hover a, ul.menu li.current a {
 }
 .col-4 {
 	float:left;
-	max-width:310px;
-        width:33.333%;
+	width:310px;
 }
 .col-4 h3, .col-5 h3 {
 	padding-top:34px;
 }
 .col-5 {
 	float:left;
-	max-width:510px;
-        width:33.333%;
+	width:510px;
 }
 .col-5 h2 {
 	padding-top:33px;
 }
 ul.list {
 	margin-top:26px;
-	max-width:230px;
-        width:33.333%;
+	width:230px;
 	float:left;
 	margin-right:40px;
 }
@@ -617,16 +594,14 @@ ul.list {
 }
 .col-7 {
 	float:left;
-	max-width:630px;
-        width:33.333%;
+	width:630px;
 }
 .col-7 h2 {
 	padding-top:33px;
 }
 .col-8 {
 	float:left;
-	max-width:190px;
-        width:33.333%;
+	width:190px;
 }
 .col-8 h5 {
 	padding-top:39px;
@@ -635,8 +610,7 @@ ul.list {
 	overflow:hidden;
 }
 .box-5>div {
-	max-width:151px;
-        width:33.333%;
+	width:151px;
 	float:left;
 	text-align:center;
 	margin-right:8px;
@@ -681,8 +655,7 @@ ul.list {
 }
 /****************************footer************************/
 footer {
-	max-width:950px;
-        width:66.667%;
+	width:950px;
 	margin:0 auto;
 	position:relative;
 	overflow:hidden;
@@ -696,19 +669,16 @@ footer p, footer p a.link {
 }
 /**********************form**********************/
 .map {
-	max-width:502px;
-        width:33.333%;
+	width:502px;
 	height:217px;
 	margin:33px 0 0 0;
 }
 .map iframe {
-	max-width:502px;
-        width:33.333%;
+	width:502px;
 	height:217px;
 }
 dl.adr {
-	max-width:200px;
-        width:33.333%;
+	width:200px;
 	float:left;
 	margin-right:40px;
 }
@@ -716,8 +686,7 @@ dl.adr dt {
 	margin:14px 0 6px 0;
 }
 dl.adr dd span {
-	max-width:62px;
-        width:33.333%;
+	width:62px;
 	text-align:right;
 	display:block;
 	float:left;
@@ -731,8 +700,7 @@ dl.adr dd a:hover {
 }
 #form {
 	margin: 33px 0 0px 0px;
-	max-width:310px;
-        width:33.333%;
+	width:310px;
 }
 #form input {
 	border:#d8d5d5 1px solid;
@@ -741,8 +709,7 @@ dl.adr dd a:hover {
 	color:#48484e;
 	padding:4px 10px 6px 10px;
 	outline: medium none;
-	max-width: 218px;
-        width:33.333%;
+	width: 218px;
 	height:17px;
 	float:left;
 }
@@ -755,8 +722,7 @@ dl.adr dd a:hover {
 	outline: medium none;
 	overflow: auto;
 	padding: 4px 0px 0px 10px;
-	max-width: 228px;
-        width:33.333%;
+	width: 228px;
 	resize:none;
 	margin:0px 0 0 0;
 	float:left;
@@ -772,15 +738,13 @@ dl.adr dd a:hover {
 	float:left;
 	text-align:right;
 	display:inline-block;
-	max-width:60px;
-        width:33.333%;
+	width:60px;
 	padding-top:4px;
 	padding-right:9px;
 }
 .btns {
 	text-align:right;
-	max-width:310px;
-        width:33.333%;
+	width:310px;
 	padding-top:6px;
 }
 .btns a {

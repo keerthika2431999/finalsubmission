@@ -86,15 +86,36 @@
         <div class="col-5 left-2">
           <h2 class="h2-line-3">Starters  :</h2>
           <div class="wrap">
-            <ul class="list">
+            <ul id="list1">
                 <%
                  while (rs.next()) {
                 %>
-              <li><strong><%=rs.getString("name")%></strong><span>$<%=rs.getInt("price")%></span><em>&nbsp;</em></li>
+              <li><strong><%=rs.getString("name")%></strong><span><%=rs.getInt("price")%></span><em>&nbsp;</em>
+              Number: <input type="number" id="myNumber"></li>
              
              <%}%>
               
             </ul>
+              <button onclick="F1()">Try it</button>
+             <script>
+                  function F1(){
+                     
+                     var lis1=document.getElementById("list1").getElementsByTagName("li");
+                     var total1=0;
+                     var i;
+                      
+                     for(i=0;i<lis1.length;i++)
+                     {
+                          
+                         var cost1=Number(lis1[i].getElementsByTagName("span")[0].innerHTML);
+                         var quant1=Number(lis1[i].getElementsByTagName("input")[0].value);
+                         total1+=(quant1*cost1);
+                      }
+                       window.location = "starters.jsp?value1=" + total1; 
+                    }
+            
+</script>
+
             
           </div>
         </div>

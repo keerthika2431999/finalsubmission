@@ -14,26 +14,7 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <%String message = request.getParameter("value");
-int id = 0;
-try
-{
-
-Connection con1 = DbConnection.getconnection();
-
-PreparedStatement ps=con1.prepareStatement("insert into cart1 values(?,?)");
-ps.setInt(1,id);
-ps.setString(2,message);
-ps.executeUpdate();
-out.println("USER REGISTERED SUCCESSFULLY");
-}
-catch(Exception e1)
-{
-out.println(e1.getMessage());
-}
-//String message1 = request.getParameter("value1");
-
-%>
+      
 
 
 

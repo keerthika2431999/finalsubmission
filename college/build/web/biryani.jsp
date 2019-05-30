@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page import="java.sql.PreparedStatement"%>
 <%@page import="Database.DbConnection"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Statement"%>
@@ -110,11 +111,30 @@
                          var quant=Number(lis[i].getElementsByTagName("input")[0].value);
                          total+=(quant*cost);
                       }
-                       window.location = "cart.jsp?value=" + total; 
+                       window.location = "biryani.jsp?value=" + total; 
                     }
             
 </script>
+  <%String message = request.getParameter("value");
+int id = 0;
+try
+{
 
+Connection con1 = DbConnection.getconnection();
+
+PreparedStatement ps=con1.prepareStatement("insert into cart1 values(?,?)");
+ps.setInt(1,id);
+ps.setString(2,message);
+ps.executeUpdate();
+out.println("ADDED SUCCESSFULLY");
+}
+catch(Exception e1)
+{
+out.println(e1.getMessage());
+}
+//String message1 = request.getParameter("value1");
+
+%>
   
             
               
